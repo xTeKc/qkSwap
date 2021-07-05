@@ -2,8 +2,8 @@ pragma solidity 0.8.0;
 
 import "./Token.sol";
 
-contract qkSwap {
-  string public name = "qkSwap Instant Exchange";
+contract QkSwap {
+  string public name = "QkSwap Instant Exchange";
   Token public token;
   uint public rate = 100;
 
@@ -51,7 +51,7 @@ contract qkSwap {
 
     // Perform sale
     token.transferFrom(msg.sender, address(this), _amount);
-    msg.sender.transfer(etherAmount);
+    payable(msg.sender).transfer(etherAmount);
 
     // Emit an event
     emit TokensSold(msg.sender, address(token), _amount, rate);
