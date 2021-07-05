@@ -38,7 +38,7 @@ class SellForm extends Component {
             required />
           <div className="input-group-append">
             <div className="input-group-text">
-              <img src={tokenLogo} height='32' alt=""/>
+            <div style="display: none;"> img src </div>
               &nbsp; QKST
             </div>
           </div>
@@ -59,7 +59,7 @@ class SellForm extends Component {
           />
           <div className="input-group-append">
             <div className="input-group-text">
-              <img src={ethLogo} height='32' alt=""/>
+            <div style="display: none;"> img src </div>
               &nbsp;&nbsp;&nbsp; ETH
             </div>
           </div>
