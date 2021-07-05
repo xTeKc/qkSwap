@@ -21,7 +21,7 @@ contract qkSwap {
     uint rate
   );
 
-  constructor(Token _token) public {
+  constructor(Token _token) {
     token = _token;
   }
 
