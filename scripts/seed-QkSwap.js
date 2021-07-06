@@ -19,5 +19,9 @@ module.exports = async (callback) {
         //Fetch the deployed Token
         const token = await Token.deployed()
         console.log('Token fetched', token.address)
+
+        //Fetch the deployed Exchange
+        const qkSwap = await QkSwap.deployed()
+        console.log('QkSwap fetched', qkSwap.address)
     }
 }  
