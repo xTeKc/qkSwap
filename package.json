@@ -4,6 +4,7 @@
   "description": "Instant Crypto Exchange",
   "author": "xTeKc",
   "dependencies": {
+    "@truffle/hdwallet-provider": "1.4.1",
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.7.0",
     "babel-preset-es2015": "6.24.1",
@@ -14,12 +15,14 @@
     "chai": "4.2.0",
     "chai-as-promised": "7.1.1",
     "chai-bignumber": "3.0.0",
+    "dotenv": "10.0.0",
     "identicon.js": "^2.3.3",
     "react": "16.8.4",
     "react-bootstrap": "1.0.0-beta.5",
     "react-dom": "16.8.4",
     "react-scripts": "2.1.3",
     "truffle": "5.0.5",
+    "truffle-hdwallet-provider-privkey":	"0.3.0",
     "web3": "1.0.0-beta.55"
   },
   "scripts": {
