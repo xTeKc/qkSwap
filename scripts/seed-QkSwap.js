@@ -10,3 +10,10 @@ const ether = (n) => {
     web3.utils.toWei(n.toString(), 'ether')
   )
 }
+
+module.exports = async (callback) {
+    try {
+        //Fetch accounts from wallet (they are unlocked)
+        const accounts = await web3.eth.getAccounts()
+    }
+}  
