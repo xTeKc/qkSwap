@@ -24,13 +24,8 @@ module.exports = async function (callback) {
         const qkSwap = await QkSwap.deployed()
         console.log('QkSwap fetched', qkSwap.address)
 
-        //Give Tokens to account[1]
-        const sender = accounts[0]
-        const receiver = accounts[1]
-        let amount = web3.utils.toWei('10000', 'ether') // 10_000 tokens
-
     }
     finally {
-        
+
     }
 }
