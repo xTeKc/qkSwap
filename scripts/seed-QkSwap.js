@@ -11,7 +11,7 @@ const ether = (n) => {
   )
 }
 
-module.exports = async (callback) {
+module.exports = async function (callback) {
     try {
         //Fetch accounts from wallet (they are unlocked)
         const accounts = await web3.eth.getAccounts()
@@ -30,4 +30,7 @@ module.exports = async (callback) {
         let amount = web3.utils.toWei('10000', 'ether') // 10_000 tokens
 
     }
-}  
+    finally {
+        
+    }
+}
