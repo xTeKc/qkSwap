@@ -3,7 +3,7 @@ pragma solidity 0.8.0;
 contract Token {
     string  public name = "qkSwap Token";
     string  public symbol = "QKST";
-    uint256 public totalSupply = 1000000000000000000000000; // 1 million tokens
+    uint256 public totalSupply; //1000000000000000000000000; // 1 million tokens
     uint8   public decimals = 18;
 
     event Transfer(
@@ -22,6 +22,7 @@ contract Token {
     mapping(address => mapping(address => uint256)) public allowance;
 
     constructor() {
+        totalSupply = 1000000 * (10 ** decimals);
         balanceOf[msg.sender] = totalSupply;
     }
 
